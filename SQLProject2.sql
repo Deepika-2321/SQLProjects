@@ -4,8 +4,8 @@
 	Problem Statement : How to get details about customers by querying a database
 
 	Highlights : Table basics and data types
-				 Various SQL operators
-				 Various SQL functions
+		     Various SQL operators
+		     Various SQL functions
 	
 	Task 1: Download Adventure Works database from Github
 	Task 2: Restore a backup of the database into the SQL Server
@@ -23,6 +23,7 @@ select * from
 
 
 -----------Get the details of the sales header order made in May 2011
+
 
 select * from [Sales].[SalesOrderHeader]
 
@@ -48,13 +49,14 @@ select *,modifieddate,day(modifieddate),year(modifieddate) from [Sales].[SalesOr
 select modifieddate,day(modifieddate),year(modifieddate) from [Sales].[SalesOrderDetail] where day(modifieddate)=31 and year(modifieddate)=2011
 
 
---------------Get the total sales made in  May 2011
+---------------Get the total sales made in  May 2011
 
 
 select sum(orderqty*unitprice) from [Sales].[SalesOrderDetail] where day(modifieddate)=31 and year(modifieddate)=2011
 
 
 ---------------Get the total sales made in the year 2011 by month order by increasing sales
+
 
 select sum(orderqty*unitprice) as sales,month(modifieddate) as month from [Sales].[SalesOrderDetail] 
 where year(modifieddate)=2011 group by month(modifieddate) order by sales asc
