@@ -4,17 +4,19 @@ This repository contains SQL (SQL Server) Projects.
 
 Project 2 : Querying a large relational database
 
-Highlights : Table basics and data types
-		         Various SQL operators
-		         Various SQL functions
+Highlights : 
+
+1. Table basics and data types
+2. Various SQL operators
+3. Various SQL functions
              
- View SQL script.
- https://github.com/Deepika-2321/SQLProjects/blob/main/SQLProject2.sql
+View SQL script.
+https://github.com/Deepika-2321/SQLProjects/blob/main/SQLProject2.sql
  
  
- Project 3 : Relational Database Design
+Project 3 : Relational Database Design
  
- Tasks:
+Tasks:
 1. Define relations/attributes
 2. Define primary keys
 3. Create foreign keys
